@@ -1,0 +1,42 @@
+Change Log:
+
+Changes made to shape.java:
+    Added a draw method with the parameters graphics g and color c
+    Added a getPoint method that returns the first point of the instance
+    Added a contains method that returned true or false if the current object contained the argument object.
+        This trickled down to the corresponding subclasses as well
+
+
+Changes made to specific classes:
+
+    Rectangle.java
+        Added a getX and getY method for the rectangle. Returned the x,y value of where the top left corner of the rectangle was.
+        Added a setPosition method with the parameters x,y,w,h.
+            This sets the position, width, and height of the rectangle.
+        
+    Triangle.java
+        Added a new constructor that gets the x,y, width, and height of the triangle and creates the 3 points of the triangle based off of
+        those values.
+        Added getters for the width and height of the triangle
+            These return the width and height of the triangle
+
+    Point.java
+        Other than added methods required from the interface, there is nothing else changed. (draw, contains, and getPoint)
+
+    Line.java
+        Other than the added methods required from the interface, there is nothing else changed. (draw, contains)
+
+    Circle.java
+        implemented a draw method.
+
+    Square.java
+        readjusted the calculations for the constructor
+
+    Polygon.java
+        made polygon a non-abstract class.
+            This means that all abstract methods were made non-abstract.
+                Area was made to return zero instead.
+        added a toIntXArray and toIntYArray
+            These returns an array of integers of all the x or y values of the polygon.
+        added all the required methods from the interface.
+            This includes draw, contains, and getPoint.
